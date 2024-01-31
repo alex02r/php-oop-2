@@ -18,5 +18,39 @@
             <i class="fs-2 fas fa-paw"></i>
         </div>
     </header>
+    <main>
+        <div class="container my-5">
+            <div class="row row-gap-3">
+                <div class="col-12">
+                    <h2> Prodotti Per animali: </h2>
+                </div>
+                <?php
+                    foreach($products as $product){
+                        ?>
+                        <div class="col-4">
+                            <div class="card p-3 h-100">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                    <img src="<?php echo $product->img ?>" class="img-fluid rounded-start" alt="<?php echo $product->name ?>">
+                                    </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php echo $product->name ?></h5>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">Animale: <?php echo $product->animal ?></small> <br>
+                                            <small class="text-body-secondary">Tipologia: <?php echo $product->type ?></small>
+                                        </p>
+                                        <p class="card-text">Prezzo: <?php echo $product->price ?></p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                ?>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
