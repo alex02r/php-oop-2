@@ -1,6 +1,7 @@
 <?php
     include_once __DIR__."/models/Tipologia.php";
     include_once __DIR__."/models/Prodotto.php";
+
     $animal_1 = new Categoria("Cane");
     $animal_2 = new Categoria("Gatto");
     $animal_3 = new Categoria("Uccelli");
