@@ -37,8 +37,13 @@
                                     <div class="card-body">
                                         <h5 class="card-title"><?php echo $product->name ?></h5>
                                         <p class="card-text">
-                                            <small class="text-body-secondary">Animale: <?php echo $product->animal ?></small> <br>
-                                            <small class="text-body-secondary">Tipologia: <?php echo $product->type ?></small>
+                                            <small class="text-body-secondary">Animale: <?php foreach($product->categoria as $type ){ echo $type; }; ?></small> <br>
+                                            <small class="text-body-secondary">Tipologia: <?php echo $product->tipologia ?></small>
+                                            <?php
+                                                if (isset($product->scadenza)) {
+                                                    ?> <br> <small class="text-body-secondary">Scadenza: <?php echo $product->scadenza ?></small><?php
+                                                }
+                                            ?>
                                         </p>
                                         <p class="card-text">Prezzo: <?php echo $product->price ?></p>
                                     </div>
