@@ -13,8 +13,10 @@
 </head>
 <body>
     <header class="bg-success p-3 text-white">
-        <h1>Pet Shop</h1>
-
+        <div class="d-flex align-items-center gap-3">
+            <h1>Pet Shop</h1>
+            <i class="fs-2 fas fa-paw"></i>
+        </div>
     </header>
 </body>
 </html>
