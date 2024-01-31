@@ -1,5 +1,4 @@
 <?php
-include_once __DIR__.'Categoria.php';
     class Prodotto{
         public $name;
         public $img;
@@ -13,5 +12,12 @@ include_once __DIR__.'Categoria.php';
             $this->categoria = $_categoria;
         }
 
+    };
+    class Categoria{
+        public $categoria;
+
+        function __construct($_categoria){
+            $this->categoria = $_categoria;
+        }
     }
 ?>
