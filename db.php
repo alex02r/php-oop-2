@@ -31,5 +31,4 @@
     $img_8 = "https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg";
     $products[] = $product_8 = new TypeProduct("Topini di peluche Trixie", $img_8, 1.99, "giochi", $animal_2);
 
-    var_dump($products);
 ?>
